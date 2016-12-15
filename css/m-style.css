@@ -328,11 +328,13 @@
     .voting__item-vote-img {
         background: url(../img/vote-star.png);
         position: absolute;
-        margin: -2px 0 0 41px;
+        margin: 0;
         background-size: contain;
         height: 29.5px;
         width: 31px;
         background-repeat: no-repeat;
+        right: -27px;
+        top: -2px;
     }
     .voting__item-vote-img:hover {
         background-image: url(../img/vote-star-hover.png);
