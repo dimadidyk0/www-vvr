@@ -1,4 +1,4 @@
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1199px) {
     .container {
         width: 375px;
         position: relative;
@@ -44,15 +44,12 @@
     }
     .header__download-button {
         width: 78px;
-        height: 39px;
+        height: 29px;
         border-bottom-right-radius: 3px;
         border-bottom-left-radius: 3px;
         float: right;
-    }
-    .header__download-img-1 {
-        width: 34px;
-        height: 14.5px;
-        padding-top: 9px;
+        padding: 10px 0 0 0;
+        font: 13px helveticaBold;
     }
     .header__download-block-1 .header__download-bottom-text {
         padding: 48px 1px 0px 0px;
@@ -73,8 +70,8 @@
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }   
     h2.main-screen__header {
         text-align: center;
@@ -89,8 +86,8 @@
     .main-screen__video-block {
         -webkit-box-ordinal-group: 2;
         -webkit-order: 1;
-            -ms-flex-order: 1;
-                order: 1;
+        -ms-flex-order: 1;
+        order: 1;
         margin: -12px 0 0px -28px;
         height: 213px;
         width: 399px;
@@ -98,8 +95,8 @@
     .main-screen__list-block {
         -webkit-box-ordinal-group: 3;
         -webkit-order: 2;
-            -ms-flex-order: 2;
-                order: 2;
+        -ms-flex-order: 2;
+        order: 2;
         padding: 6px 0 0px 0px;
     }
     .iphone-iframe {
@@ -129,14 +126,14 @@
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
     .main-screen__subscription {
         -webkit-box-ordinal-group: 3;
         -webkit-order: 2;
-            -ms-flex-order: 2;
-                order: 2;
+        -ms-flex-order: 2;
+        order: 2;
         margin-top: 54px;
         background: url(../img/m-bg-3.png);
         background-color: #F8E71C;
@@ -147,8 +144,8 @@
         padding: 0;
         -webkit-box-ordinal-group: 2;
         -webkit-order: 1;
-            -ms-flex-order: 1;
-                order: 1;    
+        -ms-flex-order: 1;
+        order: 1;    
         width: auto;
     }
     .main-screen__block-2 {
@@ -321,8 +318,8 @@
         -webkit-box-orient: horizontal;
         -webkit-box-direction: reverse;
         -webkit-flex-direction: row-reverse;
-            -ms-flex-direction: row-reverse;
-                flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
         padding: 0px 14px 0 0;
     }
     .voting__item-vote-img {
@@ -584,7 +581,7 @@
     .siema__inside {
       padding: 1.6rem;
       -webkit-box-shadow: inset 0 0 0 1px #ddd;
-              box-shadow: inset 0 0 0 1px #ddd;
+      box-shadow: inset 0 0 0 1px #ddd;
   }
 
 
@@ -614,27 +611,27 @@
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: inherit;
 }
 .attracti__logo-block {
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
-        -ms-flex-order: 1;
-            order: 1;
+    -ms-flex-order: 1;
+    order: 1;
 }
 .attract__find-fb {
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
-        -ms-flex-order: 2;
-            order: 2;
+    -ms-flex-order: 2;
+    order: 2;
 }
 .attracti__find-tw {
     -webkit-box-ordinal-group: 4;
     -webkit-order: 3;
-        -ms-flex-order: 3;
-            order: 3;
+    -ms-flex-order: 3;
+    order: 3;
 }
 .attracti__logo-img {
     background: url(../img/m-logo-attracti.png) no-repeat;
@@ -721,7 +718,7 @@
     height: 78px;
     width: 78px;
     -webkit-box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.3);
-            box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.3);
     border-radius: 13px;
 }
 .footer__links-list {
@@ -737,13 +734,6 @@
     margin: 0 auto;
     vertical-align: top;
 }
-
-/*  удалить по окончанию  */
-.footer__links-list-item:last-child {
-    display: none;
-}
-/*  /удалить по окончанию  */
-
 .footer__links-text {
     color: #7A7A7A;
     font: 13px/15.5px helveticaregular;
@@ -766,8 +756,8 @@
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
     -webkit-flex-direction: row-reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
     position: relative;
     right: 22px;
     top: 14px;
@@ -817,12 +807,14 @@
     content: "Languages";
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
-        -ms-flex-order: 1;
-            order: 1;
+    -ms-flex-order: 1;
+    order: 1;
     text-transform: capitalize;
-    margin: 7px 75px 0 0px;
+    margin: 7px 0 0 0;
     font: 14px helveticabold;
     letter-spacing: 0.56px;
+    position: absolute;
+    left: 40px;
 }
 .footer__privacy {
     display: block;
@@ -914,9 +906,6 @@
     .footer__links-list {
         width: 390px;
     }
-    .footer__lang-list {
-        right: 29px;
-    }
     /* slider Siema */
 
     /* /slider Siema */
@@ -938,7 +927,8 @@
     }
     .header__download-button {
         width: 65px;
-        height: 39px;
+        height: 29px;
+        font-size: 12px;
     }
     .header__download-block-1 .header__download-bottom-text {
         padding: 45px 1px 0px 0px;
@@ -1202,9 +1192,10 @@
         top: 12px;
     }
     .footer__lang-list:before {
-        margin: 5px 51px 0 0px;
+        margin: 5px 0 0 0px;
         font-size: 12px;
         letter-spacing: 0.2px;
+        left: 36px;
     }
     .footer__privacy {
         width: auto;

@@ -9,6 +9,7 @@
 	<title>VVR</title>
 </head>
 <body>
+	<div id="overlay"></div>
 	<div class="container">
 		<header class="header">
 			<div class="header__logo">
@@ -17,7 +18,19 @@
 			</div>
 			<div class="header__download">
 				<div class="header__download-block header__download-block-1">
-					<a href="#" class="header__download-button"><img src="img/free-text.png" alt="" class="header__download-img-1"></a>
+					<a href="#request-for-beta" class="open_modal header__download-button">Request a beta</a>
+					<div id="request-for-beta" class="modal-block modal-request">
+						<span class="modal_close"></span>
+						<h2 class="modal-request__header">Request for beta</h2>
+						<p class="modal-request__text">Subscribe to get notified when Visual voice recorder beta is released.</p>
+						<form action="" class="modal-request__form">
+							<label for="" class="modal-request__name-label">Full name</label>
+							<input type="text" class="modal-request__name-input" placeholder="Enter your full name" >
+							<label for="" class="modal-request__email-label">Email</label>
+							<input type="email" class="modal-request__email-input" placeholder="Enter your email">
+							<input type="submit" class="modal-request__submit" value="subscribe to list">
+						</form>
+					</div>
 					<p class="header__download-bottom-text">iPhone &amp; iPad</p>
 				</div>
 				<div class="header__download-block header__download-block-2">
@@ -164,9 +177,20 @@
 				<h2 class="found-bug__header">
 					Found a bug?
 				</h2>
-				<a href="#" class="found-bug__button">
+				<a href="#report-bug" class="open_modal  found-bug__button">
 					REPORT BUG 
 				</a>
+				<div id="report-bug" class="modal-block modal-report">
+					<span class="modal_close"></span>
+					<h2 class="modal-report__header">Oh no…Have <br> You found a bug?</h2>
+					<form action="" class="modal-report__form">
+						<label for="" class="modal-report__name-label">Full name</label>
+						<input type="text" class="modal-report__name-input" placeholder="Enter your full name" >
+						<label for="" class="modal-report__email-label">Email</label>
+						<textarea class="modal-report__email-textarea" placeholder="Enter your email"></textarea>
+						<input type="submit" class="modal-report__submit" value="Report bug">
+					</form>
+				</div>
 				<div class="found-bug__text">
 					<p class="found-bug__p">Version 1.0.3 on App store rewiev  </p>
 					<p class="found-bug__p">- more improvements and bugfixes <br />- made VVR compatible with iOS 10. </p>
@@ -182,8 +206,9 @@
 					</span>
 					on Twitter 
 					<img src="img/found-tw-icon.png" alt="" class="found-bug__bootom-img-1">
-				</a> 
-				<span class="m-hide">
+				</a>
+
+				<!-- <span class="m-hide">
 					or write to 
 				</span>
 				<a href="#" class="found-bug__vvrteam-link">
@@ -193,7 +218,8 @@
 					<span class="found-bug__bootom-text-span">
 						#vvrteam
 					</span>
-				</a>
+				</a> -->
+
 			</div>
 		</div>
 	</div>
@@ -577,19 +603,19 @@
 			<div class="footer__attracti attracti">
 				<div class="attract__find-fb">
 					<p class="attracti__fb-above-text attracti__above-text">Find us on</p>
-					<a href="" class="attracti__fb-button attracti__button">
+					<a href="https://www.facebook.com/attracti.ukraine/" class="attracti__fb-button attracti__button">
 						<span class="mobile-block m-fb-text">Facebook</span>
 						<img src="img/attracti-fb.png" alt="" class="attracti__fb-img"><img src="img/fb-text.png" class="attracti__fb-text"></img>
 					</a>
 				</div>
 				<div class="attracti__logo-block">
-					<h2 class="attracti__logo-img"><a class="attracti__link" href="#"></a>Attracti vf</h2>
+					<h2 class="attracti__logo-img"><a class="attracti__link" href="http://attracti.com/"></a>Attracti vf</h2>
 					<a href="#"><img src="img/Switzerland.png" alt="" class="attracti__country-link attracti__country-link-1"></a>
 					<a href="#"><img src="img/Ukraine.png" alt="" class="attracti__country-link attracti__country-link-2"></a>
 				</div>
 				<div class="attracti__find-tw">
 					<p class="attracti__tw-above-text attracti__above-text">Follow us on</p>
-					<a href="" class="attracti__tw-button attracti__button">
+					<a href="https://twitter.com/Attracti" class="attracti__tw-button attracti__button">
 						<span class="mobile-block m-tw-text">Twitter</span>
 						<img src="img/attracti-tw.png" alt="" class="attracti__tw-img"><img src="img/tw-text.png" class="attracti__tw-text"></img>
 					</a>
@@ -598,39 +624,34 @@
 			<h3 class="mobile-block footer__our-projects">Our projects</h3>
 			<div class="footer__links">
 				<ul class="footer__links-list">
-					<li class="footer__links-list-item"><a href="#"><img class="f-link-img-1 f-link-img"  src="img/link-1.png" alt="" class="footer__links-img"></a>
+					<li class="footer__links-list-item"><a href="http://m3cyber.com/"><img class="f-link-img-1 f-link-img"  src="img/link-1.png" alt="Cyber M3" class="footer__links-img" title="Cyber M3"></a>
 						<span class="mobile-block footer__links-text">
 							Cyber M3
 						</span>
 					</li>
-					<li class="footer__links-list-item"><a href="#"><img class="f-link-img-2 f-link-img"  src="img/link-2.png" alt="" class="footer__links-img"></a>
-						<span class="mobile-block footer__links-text">
-							Calign
-						</span>
-					</li>
-					<li class="footer__links-list-item"><a href="#"><img class="f-link-img-3 f-link-img"  src="img/link-3.png" alt="" class="footer__links-img"></a>
+					<li class="footer__links-list-item"><a href="https://www.facebook.com/EnglishForFounders/"><img class="f-link-img-3 f-link-img"  src="img/link-3.png" alt="English for Founders" title="English for Founders" class="footer__links-img"></a>
 						<span class="mobile-block footer__links-text">
 							English for Founders
 						</span>
 					</li>
-					<li class="footer__links-list-item"><a href="#"><img class="f-link-img-4 f-link-img"  src="img/link-4.png" alt="" class="footer__links-img"></a>
+					<li class="footer__links-list-item"><a href="http://cards.attracti.com"><img class="f-link-img-2 f-link-img"  src="img/link-2.png" alt="" class="footer__links-img" title="Cards"></a>
 						<span class="mobile-block footer__links-text">
-							English for Outsources
+							Cards
 						</span>
 					</li>
-					<li class="footer__links-list-item"><a href="#"><img class="f-link-img-5 f-link-img"  src="img/link-5.png" alt="" class="footer__links-img"></a>
+					<li class="footer__links-list-item"><a href="#"><img class="f-link-img-4 f-link-img"  src="img/mockup.png" alt="" class="footer__links-img" title="Coming soon"></a>
 						<span class="mobile-block footer__links-text">
-							Cube
+							Coming soon
 						</span>
 					</li>
-					<li class="footer__links-list-item"><a href="#"><img class="f-link-img-6 f-link-img"  src="img/link-6.png" alt="" class="footer__links-img"></a>
+					<li class="footer__links-list-item"><a href="#"><img class="f-link-img-5 f-link-img"  src="img/mockup.png" alt="" class="footer__links-img" title="Coming soon"></a>
 						<span class="mobile-block footer__links-text">
-							English for Outsources
+							Coming soon
 						</span>
 					</li>
-					<li class="footer__links-list-item"><a href="#"><img class="f-link-img-7 f-link-img"  src="img/link-7.png" alt="" class="footer__links-img"></a>
+					<li class="footer__links-list-item"><a href="#"><img class="f-link-img-6 f-link-img"  src="img/mockup.png" alt="" class="footer__links-img" title="Coming soon"></a>
 						<span class="mobile-block footer__links-text">
-							English for Outsources	
+							Coming soon
 						</span>
 					</li>
 				</ul>
@@ -640,9 +661,9 @@
 			<ul class="footer__lang-list">
 				<li class="footer__lang-item footer__lang-item--item-1 footer__lang-item--active"><a href="#" class="lang__link">en</a></li>
 				<li class="footer__lang-item footer__lang-item--item-2"><a href="#" class="lang__link">ru</a></li>
-				<li class="footer__lang-item footer__lang-item--item-3"><a href="#" class="lang__link">az</a></li>
+				<!-- <li class="footer__lang-item footer__lang-item--item-3"><a href="#" class="lang__link">az</a></li>
 				<li class="footer__lang-item footer__lang-item--item-4"><a href="#" class="lang__link">uk</a></li>
-				<li class="footer__lang-item footer__lang-item--item-5"><a href="#" class="lang__link">pl</a></li>
+				<li class="footer__lang-item footer__lang-item--item-5"><a href="#" class="lang__link">pl</a></li> -->
 			</ul>
 			<hr class="mobile-block footer__hr">
 			<ul class="footer__privacy">
@@ -659,8 +680,8 @@
 		</div>
 		
 	</footer>
-	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="js/vvr-js/main.js"></script>
 </body>
 </html>

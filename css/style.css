@@ -300,21 +300,17 @@ header.header {
     width: 141px;
     height: 68px;
 }
-.header__download-img-1 {
-    width: 50px;
-    height: 21px;
-    margin: 0 auto;
-    display: block;
-    padding-top: 22px;
-}
 .header__download-button {
     width: 144px;
-    height: 68px;
+    height: 39px;
     background-color: #F8E71C;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
     position: relative;
     z-index: 4;
+    text-align: center;
+    padding: 29px 0 0 0;
+    font: 18px helveticaRegular;
 }
 .header__download-block-1 .header__download-button {
     display: block;
@@ -339,8 +335,9 @@ header.header {
     background: url(../img/bg-1.png) no-repeat;
     height: 1200px;
     background-position: 0px -7px;
-    width: 1467px;
+    max-width: 1467px;
     margin: 0 auto;
+    width: 100%;
 }
 .main-screen__block-1 {
     padding: 214px 0 0 140px;
@@ -995,10 +992,10 @@ img.found-bug__bootom-img-2 {
     width: 100%;
     left: 0;
 }
-.footer__links-list {
-    width: 670px;
+.footer__links-list {    
     margin: 0 auto;
     padding-left: 25px;
+    display: table;
 }
 .f-link-img {
     height: 56px;
@@ -1063,7 +1060,7 @@ img.found-bug__bootom-img-2 {
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: 5;
+    z-index: 3;
 }
 .video-hover:hover {
     background: url(../img/play-video.png) center center no-repeat;
@@ -1078,6 +1075,121 @@ img.found-bug__bootom-img-2 {
     width: 100%;
     height: auto;
 }
+
+
+
+
+/*
+MODAL WINDOWS
+*/
+.modal-block {
+    width: 628px;
+    height: 512px;
+    border-radius: 10px;
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -314px;
+    margin-top: -256px;
+    display: none;
+    opacity: 0;
+    z-index: 6;
+}
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+.modal_close {
+    background: url(../img/modal-x.png);
+    background-size: cover;
+    width: 47px;    
+    height: 45px;
+    position: absolute;
+    top: -53px;
+    right: -53px;
+    cursor: pointer;
+    display: block;
+}
+/* Пoдлoжкa */
+#overlay {
+    z-index:5; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+    position:fixed; /* всегдa перекрывaет весь сaйт */
+    background-color:#000; /* чернaя */
+    opacity:0.8; /* нo немнoгo прoзрaчнa */
+    -moz-opacity:0.8; /* фикс прозрачности для старых браузеров */
+    filter:alpha(opacity=80);
+    width:100%; 
+    height:100%; /* рaзмерoм вo весь экрaн */
+    top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+    left:0;
+    cursor:pointer;
+    display:none; /* в oбычнoм сoстoянии её нет) */
+}
+
+
+/*request*/
+.modal-request__header, 
+.modal-report__header {
+    font: 43px/57px PlayfairDisplayBold;
+    text-align: center;
+    padding-top: 73px;
+}
+.modal-request__text {
+    font: 16px/23px helveticabold;
+    letter-spacing: 0.34px;
+    color: #9B9B9B;
+    width: 380px;
+    text-align: center;
+    margin: 0 auto;
+    height: 57px;
+    padding-top: 12px;
+}
+.modal-request__name-label, 
+.modal-request__email-label, 
+.modal-report__name-label, 
+.modal-report__email-label {
+    display: block;
+    padding-left: 80px;
+    font: 16px/24px helveticabold;
+}
+.modal-request__email-label {
+    padding-top: 20px;  
+}
+.modal-request__name-input, 
+.modal-request__email-input,
+.modal-report__name-input {
+    outline: none;
+    border: 1px solid #DCDCDC;
+    border-radius: 5px;
+    width: 456px;
+    margin: 6px 0 0 80px;
+    padding: 10px 13px 8px 13px;
+    height: 20px;
+    display: block;
+    font: 14px/20px helveticaregular;
+}
+.modal-request__submit,
+.modal-report__submit {
+    margin: 35px auto 0;
+    display: block;
+    width: 206px;
+    border: 0;
+    border-radius: 2px;
+    outline: none;
+    background-color: #FFE620;
+    text-align: center;
+    text-transform: uppercase;
+    font: 14px/14px helveticabold;
+    vertical-align: middle;
+    padding: 17px 0 14px;
+    cursor: pointer;
+}
+/*
+/MODAL WINDOWS
+*/
+
+
+
+
+
 
 
 
